@@ -24,7 +24,8 @@ export const getStaticProps: GetStaticProps = async(context) => {
         name: item.name,
         url: item.html_url
       }))
-    }
+    },
+    revalidate: 60
   }
 }
 
